@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Car Gallery</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Content</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    color: black;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    background-color: black;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-front img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.card-back {
+    background-color: red;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+p{
+    font-weight: bold;
+}
+
+
+    </style>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="charger" alt="Car 1">
+                        <h2>2020 Dodge Charger GT</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Details</h2>
+                        <p>Miles: 21,000</p>
+                        <p>Price: $27,998</p>
+                        <p>Color: Black</p>
+                        <p>Drive Type: RWD</p>
+                        <p>Transmission: Automatic</p>
+                    </div>
+                </div>
+            </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="bmw.jpg" alt="Car 2">
+                    <h2>2018 BMW X5 xDrive</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Details</h2>
+                    <p>Miles: 49,400</p>
+                    <p>Price: $19,400</p>
+                    <p>Color: White</p>
+                    <p>Drive Type: AWD</p>
+                    <p>Transmission: Automatic</p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="jeep.jpg" alt="Car 3">
+                        <h2>2015 Jeep Grand Cherokee Limited</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Details</h2>
+                        <p>Miles: 79,281</p>
+                        <p>Price: $17,995</p>
+                        <p>Color: Metallic Black</p>
+                        <p>Drive Type: AWD</p>
+                        <p>Transmission: Automatic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="ford truck.jpg" alt="Car 4">
+                            <h2>2016 RAM 1500 Tradesman</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>Details</h2>
+                            <p>Miles: 87,890</p>
+                            <p>Price: $19,495</p>
+                            <p>Color: Metallic Red</p>
+                            <p>Drive Type: AWD</p>
+                            <p>Transmission: Automatic</p>
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="card-container">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="tahoe.jpg" alt="Car 5">
+                                <h2>2015 Chevorlet Tahoe</h2>
+                            </div>
+                            <div class="card-back">
+                            <h2>Details</h2>
+                            <p>Miles: 81,220</p>
+                            <p>Price: $26,403</p>
+                            <p>Color: Matte Black</p>
+                            <p>Drive Type: AWD</p>
+                            <p>Transmission: Automatic</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="card-container">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="kia.jpg" alt="Car 5">
+                                    <h2>2021 Kia Sedona</h2>
+                                </div>
+                                <div class="card-back">
+                                <h2>Details</h2>
+                                <p>Miles: 85,560</p>
+                                <p>Price: $22,903</p>
+                                <p>Color: Matte Blue</p>
+                                <p>Drive Type: 2WD</p>
+                                <p>Transmission: Automatic</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    <div class="card-container">
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="range.jpg" alt="Car 5">
+                                        <h2>2018 Range Rover</h2>
+                                    </div>
+                                    <div class="card-back">
+                                    <h2>Details</h2>
+                                    <p>Miles: 45,220</p>
+                                    <p>Price: $29,993</p>
+                                    <p>Color: Matte Black</p>
+                                    <p>Drive Type: AWD</p>
+                                    <p>Transmission: Automatic</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        <div class="card-container">
+                                <div class="card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <img src="audi.jpg" alt="Car 5">
+                                            <h2>2017 Audi A7</h2>
+                                        </div>
+                                        <div class="card-back">
+                                        <h2>Details</h2>
+                                        <p>Miles: 76,532</p>
+                                        <p>Price: $23,995</p>
+                                        <p>Color: Matte Black</p>
+                                        <p>Drive Type: AWD</p>
+                                        <p>Transmission: Automatic</p>
+                                        </div>
+                                    </div>
+                                </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Reyli Nava Flores. All rights reserved.</p>
+    </footer>
+</body>
+</html>
